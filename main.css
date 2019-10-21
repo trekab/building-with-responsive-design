@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .text-color {
@@ -45,6 +45,10 @@
   margin: 0.4rem 0;
 }
 
+.main-top div {
+  margin: 0.5rem;
+}
+
 .main-top__article {
   width: 100%;
   height: 20rem;
@@ -66,63 +70,6 @@
   left: 0;
 }
 
-@media (min-width: 50rem) {
-
-  .header-top {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .header-nav {
-    display: inline-block;
-    width: 700px;
-  }
-
-  .header-nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .header-nav ul li {
-    list-style: none;
-    
-  }
-
-  .header-humbuger {
-    display: none;
-  }
-
-  .main-top {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 20rem);
-  }
-
-  .one {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    height: auto;
-  }
-
-  .two {
-    grid-column-start: 2;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .three {
-    grid-column-start: 2;
-    grid-column-end: -1;
-    grid-row-start: 2;
-    grid-row-end: -1;
-  }
-}
-
 .latest-news__story {
   width: 100%;
 }
@@ -141,34 +88,6 @@
 
 .story-image__text {
   width: 80%;
-}
-
-@media (min-width: 50rem) {
-  .main-rest {
-    max-width: 1600px;
-    margin: auto;
-  }
-
-  .latest-news {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-  }
-  
-  .latest-news__story {
-    display: block;
-    width: 24%;
-    margin: 0.5rem;
-  }
-  .story-image__container {
-    display: block;
-    width: 100%;
-  }
-
-  .story-image__text {
-    display: block;
-    width: 100%;
-  }
 }
 
 .fund {
@@ -198,65 +117,8 @@
   text-align: center;
 }
 
-@media (min-width: 50rem) {
-
-  .latest-funding__header {
-    display: flex;
-    align-items: baseline;
-  }
-  
-  .latest-funding__header ul {
-    width: 25rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .latest-funding {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .fund {
-    width: 24%;
-    min-width: 250px;
-    height: 15rem;
-  }
-
-  .latest-funding__header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .latest-funding__header  ul {
-    display: flex;
-  }
-}
-
-@media (min-width: 50rem) {
-  .main-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card {
-    width: 30%;
-    min-width: 200px;
-    margin: 0.5rem;
-  }
-}
-
 .fund {
   height: 15rem;
-}
-
-@media (min-width: 50rem) {
-  .latest-deals {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .fund {
-    width: 23%;
-    min-width: 200px;
-  }
 }
 
 .card-background {
@@ -316,4 +178,160 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .heading-one {
+    font-size: 2rem;
+  }
+
+  .heading-two {
+    font-size: 1rem;
+  }
+
+  .header-top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header-nav {
+    display: inline-block;
+    width: 700px;
+  }
+
+  .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav ul li {
+    list-style: none;
+  }
+
+  .header-humbuger {
+    display: none;
+  }
+
+  .main-top {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 0.5rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 20rem);
+  }
+
+  .main-top div {
+    margin: 0;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: auto;
+  }
+
+  .two {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .three {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+  }
+
+  .main-rest {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .latest-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  
+  .latest-news__story {
+    display: block;
+    width: 24%;
+    margin: 0.5rem;
+  }
+  .story-image__container {
+    display: block;
+    width: 100%;
+  }
+
+  .story-image__text {
+    display: block;
+    width: 100%;
+  }
+
+  .latest-funding__header {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .latest-funding__header ul {
+    width: 25rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .latest-funding {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fund {
+    width: 24%;
+    min-width: 250px;
+    height: 15rem;
+  }
+
+  .latest-funding__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .latest-funding__header  ul {
+    display: flex;
+  }
+
+  .main-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 30%;
+    min-width: 200px;
+    margin: 0.5rem;
+  }
+
+  .latest-deals {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fund {
+    width: 23%;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-one {
+    font-size: 4rem;
+  }
+
+  .heading-two {
+    font-size: 2rem;
+  }
 }
