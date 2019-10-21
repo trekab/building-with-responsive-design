@@ -114,10 +114,6 @@
   text-align: center;
 }
 
-.fund {
-  height: 15rem;
-}
-
 .card-background {
   background: linear-gradient(to top, black 10%, transparent), url("images/Google.jpg");
   background-size: cover;
@@ -251,7 +247,7 @@
     flex-wrap: wrap;
     justify-content: start;
   }
-  
+
   .latest-news__story {
     display: block;
     width: 23.5%;
