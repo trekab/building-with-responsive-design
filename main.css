@@ -1,16 +1,48 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  font-family: cursive;
+}
+
+.text-color {
+  color:  #f42;
 }
 
 .header-top {
   width: 100%;
-  height: 1.5rem;
-  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-bottom {
+.logo {
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.header-nav {
+  display: none;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.toggle-button__bar {
   width: 100%;
-  height: 3rem;
+  height: 0.2rem;
+  background: #f42;
+  display: block;
+  border-radius: 2rem;
+  margin: 0.4rem 0;
 }
 
 .main-top__article {
@@ -35,6 +67,33 @@
 }
 
 @media (min-width: 50rem) {
+
+  .header-top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header-nav {
+    display: inline-block;
+    width: 700px;
+  }
+
+  .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav ul li {
+    list-style: none;
+    
+  }
+
+  .header-humbuger {
+    display: none;
+  }
+
   .main-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -86,19 +145,20 @@
 
 @media (min-width: 50rem) {
   .main-rest {
-    width: 80%;
+    max-width: 1600px;
     margin: auto;
   }
 
   .latest-news {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
   }
   
   .latest-news__story {
     display: block;
-    width: 25%;
-    min-width: 250px;
+    width: 24%;
+    margin: 0.5rem;
   }
   .story-image__container {
     display: block;
@@ -111,19 +171,53 @@
   }
 }
 
-.latest-funding div {
+.fund {
   height: 15rem;
 }
 
+.latest-funding__header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fund {
+  margin: 0.5rem;
+}
+
+.price {
+  background: rgba(255,68,34,.08);
+  text-align: center;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+.fund-label {
+  color: white;
+  background: #f42;
+  text-align: center;
+}
+
 @media (min-width: 50rem) {
+
+  .latest-funding__header {
+    display: flex;
+    align-items: baseline;
+  }
   
+  .latest-funding__header ul {
+    width: 25rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .latest-funding {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .latest-funding div {
-    width: 25%;
+  .fund {
+    width: 24%;
     min-width: 250px;
     height: 15rem;
   }
@@ -144,12 +238,13 @@
     flex-wrap: wrap;
   }
   .card {
-    width: 33.33%;
+    width: 30%;
     min-width: 200px;
+    margin: 0.5rem;
   }
 }
 
-.latest-deals div {
+.fund {
   height: 15rem;
 }
 
@@ -158,8 +253,8 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .latest-deals div {
-    width: 25%;
+  .fund {
+    width: 23%;
     min-width: 200px;
   }
 }
@@ -186,4 +281,39 @@
   bottom: 0;
   width: 100%;
   color: white;
+}
+
+.footer-top {
+  background: #131313;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.footer-link__icons,
+.footer-nav {
+  width: 38rem;
+  height: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 50%;
+}
+
+.footer-bottom {
+  height: 6rem;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
