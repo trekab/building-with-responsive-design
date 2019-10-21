@@ -5,7 +5,7 @@
 }
 
 .text-color {
-  color:  #f42;
+  color: #f42;
 }
 
 .heading-padding {
@@ -20,7 +20,7 @@
 }
 
 .logo {
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
   color: white;
   font-size: 24px;
   font-weight: 900;
@@ -63,9 +63,9 @@
 .one,
 .two,
 .three {
- background: linear-gradient(to top, black 10%, transparent), url("images/image.png");
- background-size: cover;
- color: white;
+  background: linear-gradient(to top, black 10%, transparent), url("images/image.png");
+  background-size: cover;
+  color: white;
 }
 
 .main-top__text {
@@ -76,9 +76,6 @@
 
 .latest-news__story {
   width: 100%;
-}
-
-.latest-news__story {
   display: flex;
 }
 
@@ -92,10 +89,6 @@
 
 .story-image__text {
   width: 80%;
-}
-
-.fund {
-  height: 15rem;
 }
 
 .latest-funding__header ul {
@@ -185,7 +178,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header-top {
     width: 100%;
     display: flex;
@@ -279,11 +271,13 @@
 
   .latest-funding__header {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
   }
-  
+
   .latest-funding__header ul {
     width: 25rem;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -294,19 +288,10 @@
   }
 
   .fund {
-    width: 24%;
-    min-width: 250px;
     height: 15rem;
+    width: 23%;
+    min-width: 200px;
     flex-grow: 1;
-  }
-
-  .latest-funding__header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .latest-funding__header  ul {
-    display: flex;
   }
 
   .main-cards {
@@ -323,10 +308,6 @@
   .latest-deals {
     display: flex;
     flex-wrap: wrap;
-  }
-  .fund {
-    width: 23%;
-    min-width: 200px;
   }
 }
 
