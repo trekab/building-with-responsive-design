@@ -12,11 +12,16 @@
   padding: 0.5rem;
 }
 
+.main-header {
+  display: none;
+}
+
 .header-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ebe2e2;
 }
 
 .logo {
@@ -32,7 +37,23 @@
 }
 
 .search-btn {
-  display: none;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.2rem;
+  align-self: baseline;
+  border-left: 1px solid #ebe2e2;
+  border-right: 1px solid #ebe2e2;
+  color: #ccc7c7;
+  vertical-align: middle;
+}
+
+.search-btn button {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: none;
+  outline: none;
 }
 
 .toggle-button {
@@ -42,6 +63,7 @@
   cursor: pointer;
   padding-top: 0;
   padding-bottom: 0;
+  vertical-align: middle;
 }
 
 .toggle-button__bar {
@@ -178,6 +200,31 @@
 }
 
 @media (min-width: 768px) {
+  .main-header {
+    color: white;
+    background: black;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main-nav {
+    width: 450px;
+  }
+
+  .sub-nav {
+    width: 300px;
+  }
+
   .header-top {
     width: 100%;
     display: flex;
@@ -205,25 +252,7 @@
     display: none;
   }
 
-  .search-btn {
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    padding: 0.2rem;
-    align-self: baseline;
-    border-left: 1px solid #ebe2e2;
-    color: #ccc7c7;
-  }
-
-  .search-btn button{
-    width: 100%;
-    height: 100%;
-    background: white;
-    border: none;
-    outline: none;
-  }
-
-  .header-humbuger {
+  .toggle-button {
     display: none;
   }
 
