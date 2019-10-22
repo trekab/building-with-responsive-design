@@ -211,7 +211,7 @@
   justify-content: center;
 }
 
-.footer-nav a{
+.footer-nav a {
   color: white;
   text-decoration: none;
 }
@@ -425,14 +425,13 @@
   .logo-article {
     display: block;
     width: 30vw;
-    
   }
 
   .one {
-    background: linear-gradient(to top, black 10%, transparent), radial-gradient(ellipse 260% 100% at top left, #f42 , transparent), url("images/image.png");
+    background: linear-gradient(to top, black 10%, transparent), radial-gradient(ellipse 260% 100% at top left,#f42 , transparent), url("images/image.png");
   }
 
   .logo {
-   display: none;
+    display: none;
   }
 }
