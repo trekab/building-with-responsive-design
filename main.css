@@ -8,18 +8,25 @@
   color: #f42;
 }
 
+.header-div {
+  display: flex;
+}
+
+.header-section {
+  flex-grow: 1;
+}
+
 .heading-padding {
   padding: 0.5rem;
 }
 
-.main-header {
+.header-top {
   display: none;
 }
 
-.header-top {
-  width: 100%;
+.header-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid #ebe2e2;
 }
@@ -40,7 +47,7 @@
   padding-right: 16px;
 }
 
-.header-nav {
+.header-bottom__nav {
   display: none;
 }
 
@@ -217,72 +224,75 @@
 }
 
 @media (min-width: 768px) {
-  .main-header {
+  .header-top {
     color: white;
     background: black;
     font-size: 0.8rem;
-    height: 1.5rem;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 4.5rem;
   }
 
-  .main-header ul {
+  .header-top ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  .main-header ul li a {
-    color: white;
-    text-decoration: none;
   }
 
   .header-top ul li a {
-    color: gray;
+    color: #a39f9f;
     text-decoration: none;
   }
 
-  .main-nav {
+  .header-top ul li a:hover {
+    color: white;
+  }
+
+  .header-bottom ul li a {
+    color: #a39f9f;
+    text-decoration: none;
+  }
+
+  .header-bottom ul li a:hover {
+    color: black;
+  }
+
+  .header-top__nav1 {
     width: 450px;
   }
 
-  .sub-nav {
-    width: 300px;
+  .header-top__nav2 {
+    width: 320px;
+    padding-right: 16px;
   }
 
-  .header-top {
-    width: 100%;
+  .header-bottom {
     display: flex;
     font-size: 0.8rem;
     justify-content: space-between;
-    padding-left: 5rem;
     align-items: center;
     height: 3rem;
     border-bottom: 1px solid #ebe2e2;
   }
 
-  .header-nav {
+  .header-bottom__nav {
     display: inline-block;
     width: 500px;
   }
 
-  .header-nav ul {
+  .header-bottom__nav ul {
     display: flex;
     justify-content: space-between;
   }
 
-  .header-nav ul li {
+  .header-bottom__nav ul li {
     list-style: none;
   }
 
   .logo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4.5rem;
+    height: 5rem;
   }
 
   .toggle-button {
@@ -406,7 +416,7 @@
     font-size: 2rem;
   }
 
-  .main-header {
+  .header-top {
     padding-left: 0;
   }
 
