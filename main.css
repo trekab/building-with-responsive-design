@@ -185,42 +185,58 @@
 
 .footer-top {
   background: #131313;
-  color: white;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
 }
 
 .footer-link__icons,
 .footer-nav {
-  width: 38rem;
-  height: 6rem;
+  width: 60vw;
+  max-width: 28rem;
+  font-size: 0.8rem;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
 }
 
+.footer-nav {
+  padding-top: 0;
+}
+
 .icon {
-  width: 3rem;
-  height: 3rem;
-  background: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #333;
+  color: white;
   border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.icon i {
+  margin-top: 12px;
+  color: white;
 }
 
 .footer-bottom {
   height: 6rem;
   background: black;
-  color: white;
+  color: #a39f9f;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .footer-nav a {
-  color: white;
+  color: #a39f9f;
   text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: white;
 }
 
 @media (min-width: 768px) {
