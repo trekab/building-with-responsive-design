@@ -246,13 +246,13 @@
     text-decoration: none;
   }
 
-  .header-top ul li a:hover {
-    color: white;
-  }
-
   .header-bottom ul li a {
     color: #a39f9f;
     text-decoration: none;
+  }
+
+  .header-top ul li a:hover {
+    color: white;
   }
 
   .header-bottom ul li a:hover {
@@ -414,10 +414,6 @@
 
   .heading-two {
     font-size: 2rem;
-  }
-
-  .header-top {
-    padding-left: 0;
   }
 
   .header-top {
