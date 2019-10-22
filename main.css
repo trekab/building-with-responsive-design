@@ -25,11 +25,19 @@
 }
 
 .logo {
+  height: 3rem;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
-  color: white;
-  font-size: 24px;
-  font-weight: 900;
-  padding: 0.6rem 1.5rem;
+}
+
+.logo-article {
+  display: none;
+}
+
+.logo svg {
+  width: 6rem;
+  height: 3rem;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header-nav {
@@ -92,6 +100,10 @@
   background: linear-gradient(to top, black 10%, transparent), url("images/image.png");
   background-size: cover;
   color: white;
+}
+
+.cover-date {
+  display: none;
 }
 
 .main-top__text {
@@ -199,6 +211,11 @@
   justify-content: center;
 }
 
+.footer-nav a{
+  color: white;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .main-header {
     color: white;
@@ -208,6 +225,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 4.5rem;
   }
 
   .main-header ul {
@@ -215,6 +233,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .main-header ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header-top ul li a {
+    color: gray;
+    text-decoration: none;
   }
 
   .main-nav {
@@ -228,7 +256,9 @@
   .header-top {
     width: 100%;
     display: flex;
+    font-size: 0.8rem;
     justify-content: space-between;
+    padding-left: 5rem;
     align-items: center;
     height: 3rem;
     border-bottom: 1px solid #ebe2e2;
@@ -236,7 +266,7 @@
 
   .header-nav {
     display: inline-block;
-    width: 700px;
+    width: 500px;
   }
 
   .header-nav ul {
@@ -249,7 +279,10 @@
   }
 
   .logo {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.5rem;
   }
 
   .toggle-button {
@@ -366,10 +399,40 @@
 
 @media (min-width: 1024px) {
   .heading-one {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .heading-two {
     font-size: 2rem;
+  }
+
+  .main-header {
+    padding-left: 0;
+  }
+
+  .header-top {
+    padding-left: 0;
+  }
+
+  .cover-date {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.2rem;
+  }
+
+  .logo-article {
+    display: block;
+    width: 30vw;
+    
+  }
+
+  .one {
+    background: linear-gradient(to top, black 10%, transparent), radial-gradient(ellipse 260% 100% at top left, #f42 , transparent), url("images/image.png");
+  }
+
+  .logo {
+   display: none;
   }
 }
