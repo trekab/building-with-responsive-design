@@ -8,6 +8,13 @@
   color: #f42;
 }
 
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .header-div {
   display: flex;
   justify-content: flex-start;
@@ -19,10 +26,6 @@
 
 .heading-padding {
   padding: 0.5rem;
-}
-
-.header-top {
-  display: none;
 }
 
 .header-bottom {
@@ -37,7 +40,10 @@
   background: linear-gradient(to bottom right, #c09, #f42 85%);
 }
 
-.logo-article {
+.logo-article,
+.header-bottom__nav,
+.header-top,
+.cover-date {
   display: none;
 }
 
@@ -46,10 +52,6 @@
   height: 3rem;
   padding-left: 16px;
   padding-right: 16px;
-}
-
-.header-bottom__nav {
-  display: none;
 }
 
 .search-btn {
@@ -112,10 +114,7 @@ main {
   background: linear-gradient(to top, black 10%, transparent), url("../images/image.png");
   background-size: cover;
   color: white;
-}
-
-.cover-date {
-  display: none;
+  font-size: 1.2rem;
 }
 
 .main-top__text {
