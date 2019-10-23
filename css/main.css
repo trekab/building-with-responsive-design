@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.text-color {
+  color: #f42;
+}
+
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-section {
+  flex-grow: 1;
+}
+
+.heading-padding {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #ebe2e2;
+}
+
+.logo {
+  height: 3rem;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+}
+
+.logo-article,
+.header-bottom__nav,
+.header-top,
+.cover-date {
+  display: none;
+}
+
+.logo svg {
+  width: 6rem;
+  height: 3rem;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.search-btn {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.2rem;
+  align-self: baseline;
+  border-left: 1px solid #ebe2e2;
+  border-right: 1px solid #ebe2e2;
+  color: #ccc7c7;
+  vertical-align: middle;
+}
+
+.search-btn button {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: none;
+  outline: none;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: #f42;
+  display: block;
+  border-radius: 2rem;
+  margin: 0.4rem 0;
+}
+
+main {
+  font-size: 1rem;
+}
+
+.main-top div {
+  margin: 0.5rem;
+}
+
+.main-top__article {
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.one,
+.two,
+.three {
+  background: linear-gradient(to top, black 10%, transparent), url("../images/image.png");
+  background-size: cover;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.main-top__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.title-icon {
+  font-size: 18px;
+}
+
+.latest-news__story {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.story-image__container {
+  width: 23%;
+}
+
+.story-image__container img {
+  width: 100%;
+}
+
+.story-image__text {
+  width: 75%;
+  font-size: 0.6rem;
+}
+
+.latest-funding__header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fund {
+  margin: 0.5rem;
+}
+
+.price {
+  background: rgba(255, 68, 34, 0.08);
+  text-align: center;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+.fund-label {
+  color: white;
+  background: #f42;
+  text-align: center;
+}
+
+.card-background {
+  background: linear-gradient(to top, black 10%, transparent), url("../images/Google.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  height: 15vh;
+  position: relative;
+}
+
+.card-title {
+  color: #f42;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+.card-text-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.title-active:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.footer-top {
+  background: #131313;
+}
+
+.footer-link__icons,
+.footer-nav {
+  max-width: 25rem;
+  font-size: 0.8rem;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-nav {
+  padding-top: 0;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.icon i {
+  margin-top: 12px;
+  color: white;
+}
+
+.footer-bottom {
+  height: 6rem;
+  background: black;
+  color: #a39f9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: #a39f9f;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: white;
+}

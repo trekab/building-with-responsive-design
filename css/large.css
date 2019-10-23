@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {
+  .heading-one {
+    font-size: 3rem;
+  }
+
+  .heading-two {
+    font-size: 2rem;
+  }
+
+  .cover-date {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.2rem;
+  }
+
+  .logo-article {
+    display: block;
+    width: 30vw;
+  }
+
+  .one {
+    background: linear-gradient(to top, black 10%, transparent), radial-gradient(ellipse 260% 100% at top left, #f42, transparent), url("../images/image.png");
+  }
+
+  .logo {
+    display: none;
+  }
+}
